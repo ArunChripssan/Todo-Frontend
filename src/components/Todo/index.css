@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: linear-gradient(#0f2027, #203a43, #2c5364);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.task {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.title img {
+    width: 40px;
+    height:40px;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-input input {
+    padding: 10px 150px 10px 20px;
+    background-color: hsl(198, 39%, 28%);
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.task-input input::placeholder {
+    color: hsl(0, 1%, 68%);
+    font-size: 0.9rem;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background-color: hsl(198, 39%, 28%);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: hsl(198, 44%, 32%);
+}
+
+.taskLists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    gap: 10px;
+    max-height: 470px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(198, 39%, 32%);
+    border-radius: 10px;
+}
+
+.list-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.completed {
+    background-color: hsl(0, 0%, 81%);
+}
+
+.list-items span {
+    display: flex;
+    gap: 15px;
+}
+
+.list-items img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
